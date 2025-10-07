@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Create Account — JayGi Streetwear</title>
+  <link rel="stylesheet" href="create.css" />
+</head>
+<body>
+  <header class="page-header">
+    <div class="logo-wrap">
+      <img src="img/JayGi.png" alt="JayGi logo" />
+    </div>
+  </header>
+
+  <main class="signup-container">
+    <div class="signup-card">
+      <h1>Create Account</h1>
+      <p class="muted">Join JayGi Streetwear and start shopping today!</p>
+
+      <form id="signupForm" action="signIn.html" method="POST">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" required placeholder="Enter your full name" />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required autocomplete="email" placeholder="Enter your email" />
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required minlength="6" placeholder="Create a password" />
+
+        <label for="confirm">Confirm Password</label>
+        <input id="confirm" name="confirm" type="password" required minlength="6" placeholder="Re-enter your password" />
+
+        <button type="submit" class="btn-primary">Sign Up</button>
+
+        <p class="signin">Already have an account? <a href="signIn.html">Sign In</a></p>
+      </form>
+    </div>
+  </main>
+
+  <script src="create.js"></script>
+</body>
+</html>

@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JayGi Streetwear</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="navbar">
+  <div class="navbar-container">
+      <input type="checkbox" name="" id="checkbox">
+      <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+      </div>
+      <div class="logo">
+          <img src="img/JayGi.png" alt="Logo">
+      </div>
+      <ul class="menu-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about-us">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#trending">products</a></li>
+          <li><a href="cart.html"><i class='bx bx-cart'></i></a></li>
+      </ul>
+  </div>
+</div>
+
+    <section class="main-home">
+        <div class="main-text">
+            <h5>Streetwear Collection</h5>
+            <h1>New Design & <br> <span>New Collections</span></h1>
+            <p>Refresh your wardrobe with the latest trends in fashion.  <br> So what are you waiting for buy now!</p>
+           <a href="#trending" class="main-btn">Shop Now</a>
+           <a href="signIn.html" class="main-btn">Sign In</a>
+        </div>
+           </section>
+
+           <section id="collection">
+            <div class="collections">
+              <!-- REPLACEMENT -->
+            <div class="content">
+               <img src="img/eric.jpg" alt="">
+               <div class="img-content">
+                  <p>JACKET COLLECTION</p>
+                   <!-- button na magbubukas ng modal -->
+                 <button id="openWbModal" class="shop-now-btn">SHOP NOW</button>
+              </div>
+            </div>
+
+            <div class="content">
+             <img src="img/pic.jpg" alt="">
+             <div class="img-content">
+                <p>MEN CLOTHES</p>
+                <button class="shop-btn" onclick="openModal('menModal')">SHOP NOW</button>
+            </div>
+          </div>
+
+              <div class="content">
+                <img src="img/shirt.jpg" alt="">
+                <div class="img-content">
+                  <p>WOMEN CLOTHES</p>
+                  <button class="shop-btn" onclick="openModal('womenModal')">SHOP NOW</button>
+                </div>
+              </div>
+            </div>
+           </section>
+
+           <section class="trending-product" id="trending">
+            <div class="center-text">
+                <h2>Our Ukay <span> Products</span></h2>
+                <hr>
+                <br>
+                <h2 class="right">Big Sale</h2>
+            </div>
+
+            <div class="products" id="products">
+                <div class="row">
+                  <img src="img/gildi.jpg" alt="">
+                  <div class="product-text">
+                    
+                  </div>
+                  <div class="price">
+                     <h4>Stripe Cropped Shirt</h4>
+                     <div class="rating">
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                     </div>
+                     <p>$9.34 - $15.25</p>                     
+                  <button data-modal-target="modal-stripe-shirt">Buy Now</button>
+                     <button class="buy-button" data-product="Stripe Cropped Shirt">Add to cart</button>                    
+                  </div>
+                </div>
+
+                <div class="row">
+                  <img src="img/ubas.jpg" alt="">
+                  <div class="product-text">
+                    
+                  </div>
+                  <div class="price">
+                     <h4>Upper White Cotton Longsleeve</h4>
+                     <div class="rating">
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                     </div>
+                     <p>$7.45 - $12.17</p>                  
+                    <button data-modal-target="modal-white-longsleeve">Buy Now</button>
+                     <button class="buy-button" data-product="Upper White Cotton Longsleeve">Add to cart</button>   
+                  </div>
+                </div>
+
+                <div class="row">
+                  <img src="img/seven.jpg" alt="">
+                  <div class="product-text">
+                    <h5>Sale</h5>                  
+                  </div>
+                  <div class="price">
+                     <h4>B-Pants Black</h4>
+                     <div class="rating">
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bx-star'></i> 
+                     </div>
+                     <p>$8.57</p>                   
+                    <button data-modal-target="modal-p-pants-black">Buy Now</button>
+                     <button class="buy-button" data-product="B-Pants Black">Add to cart</button>                    
+                  </div>
+                </div>
+
+                <div class="row">
+                  <img src="img/four.jpg" alt="">
+                  <div class="product-text">
+                    <h5>Sale</h5>                   
+                  </div>
+                  <div class="price">
+                     <h4>Upper Black Waffle Longsleeve</h4>
+                     <div class="rating">
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bx-star'></i> 
+                     </div>
+                     <p>$7.12 - $10.33</p>                    
+                    <button data-modal-target="modal-black-white-longsleeve">Buy Now</button>                 
+                     <button class="buy-button" data-product="Upper Black Waffle Longsleeve">Add to cart</button>                    
+                  </div>
+                </div>
+
+                <div class="row">
+                  <img src="img/nine.jpg" alt="">
+                  <div class="product-text">
+                    <h5>Sale</h5>                  
+                  </div>
+                  <div class="price">
+                     <h4>Basic Upper White T-shirt</h4>
+                     <div class="rating">
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bx-star'></i>
+                      <i class='bxr  bx-star'></i>
+                     </div>
+                     <p>$4.58 - $6.08</p>                    
+                    <button data-modal-target="modal-basic-white-tshirt">Buy Now</button>
+                     <button class="buy-button" data-product="Basic Upper White T-shirt">Add to cart</button>                     
+                  </div>
+                </div>
+
+                <div class="row">
+                  <img src="img/ten.jpg" alt="">
+                  <div class="product-text">
+                       <h5>Sale</h5>   
+                  </div>
+                  <div class="price">
+                     <h4>Summer SED T-shirt</h4>
+                     <div class="rating">
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                     </div>
+                     <p>$11.01</p>                  
+                    <button data-modal-target="modal-summer-sed-tshirt">Buy Now</button>
+                     <button class="buy-button" data-product="Summer SED T-shirt">Add to cart</button>                   
+                  </div>
+                </div>
+
+                <div class="row">
+                  <img src="img/eleven.jpg" alt="">
+                  <div class="product-text">
+                                       
+                  </div>
+                  <div class="price">
+                     <h4>Mac & Bennt streetwear</h4>
+                     <div class="rating">
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bx-star'></i> 
+                     </div>
+                     <p>$13.38 - $18.15</p>                   
+                    <button data-modal-target="modal-mac-bernt-sweatwear">Buy Now</button>
+                     <button class="buy-button" data-product="Mac & Bennt streetwear">Add to cart</button>                     
+                  </div>
+                </div>
+
+                <div class="row">
+                  <img src="img/jjj.jpg" alt="">
+                  <div class="product-text">
+                    <h5>Sale</h5>                    
+                  </div>
+                  <div class="price">
+                     <h4>Loose Wide Leg Pants</h4>
+                     <div class="rating">
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bxs-star'></i> 
+                      <i class='bxr  bx-star'></i>
+                      <i class='bxr  bx-star'></i>                    
+                     </div>
+                     <p>$18.26</p>                     
+                    <button data-modal-target="modal-loose-wide-pants">Buy Now</button>
+                     <button class="buy-button" data-product="Loose-wide-Leg-Pants">Add to cart</button>                     
+                  </div>
+                </div>
+            </div>
+           </section>
+             
+           <hr>
+           <section class="ABTU" id="about-us">
+           <div class="about-box">
+             <div class="context">
+              <h2>About Us</h2>
+           </div>
+              <br>
+             <p>
+              At JayGi Streetwear, we believe fashion is more than clothing it’s a lifestyle. 
+              Our mission is to bring you the freshest designs and trendsetting collections that let you express yourself with confidence. 
+              Inspired by urban culture and modern street style, we carefully craft each piece to blend comfort, quality, and individuality. 
+              Whether you’re looking for everyday essentials or standout statement fits, our collections are designed to help you own your look and wear your story.
+             </p>
+           </div>
+           </section>
+      
+           <section class="contact" id="contact">
+            <div class="contact-info">
+              <div class="first">
+                <img src="img/JayGi.png" alt="">
+
+                <address><p>Brgy, Libertad Lavezares N. Samar</p></address>
+                <address><p>09098332851</p></address>
+                <p>JohnDoe334@gmail.com</p>
+
+               <div class="icon">
+                <a href="https://www.facebook.com/"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://x.com/?lang=en"><i class='bx bxl-twitter' ></i></a>
+               </div>
+              </div>
+        
+              <div class="second">
+                <h4>Support</h4>
+                <p>Contact us</p>
+                <p>Shopping & Returns</p>
+                <p>Free Shipping</p>
+                <p>Privacy</p>
+              </div>
+
+              <div class="third">
+                <h4>Shop</h4>
+                <p>Men's Collection</p>
+                <p>Women's Collection</p>
+                <p>WB Jacket Collection</p>
+                <p><strong>Up to 50% OFF!</strong></p>
+              </div>
+
+              <div class="fourth">
+                <h4>Members</h4>
+                <p><strong>Leader:</strong> Ian Keith Leonida</p>
+                <p>Glendon Abata</p>
+                <p>Analiza Dela Cruz</p>
+                <p>Maricar Macabuhay</p>
+                <p>Ginavel Gellego</p>
+                <p>Missy</p>
+                <p>Melvin Cajandab</p>
+                <p>Analiza Ymata</p>
+                <p>Karenjoy Fortuno</p>
+                <p>Jona Baniega</p>               
+              </div>
+
+              <div class="five">
+                <h4>New Letter</h4>
+                <p>Be the first to know about new drops, limited-edition tees, and exclusive deals.</p>               
+              </div>
+            </div>
+           </section>
+           
+          <hr>
+           <div class="end-text" id="footer">
+            <p>E-Commerce Project 2025</p>
+           </div>
+           
+
+     <!-- JACKETS COLLECTION -->
+<div id="jacketModal" class="modal">
+  <div class="modal-content1">
+    <span class="close" onclick="closeModal('jacketModal')">&times;</span>
+      <h2>Jacket Collection</h2>
+     <div class="product-grid">
+
+      <!-- Jacket 1 -->
+      <div class="product">
+        <img src="img/jacket1.jpg" alt="">
+        <h3>Ganyizhong WB Jacket</h3>
+        <p>$404.00</p>
+        <select id="WBJacketSize">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+        <br>
+        <button class="add" onclick='addToCart({
+          name: "Ganyizhong WB Jacket",
+          price: 404.00,
+          quantity: 1,
+          size: document.getElementById("WBJacketSize").value
+        })'>Add to Cart</button>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+
+      <!-- Jacket 2 -->
+      <div class="product">
+        <img src="img/jacket2.jpg" alt="">
+        <h3>Mizuno Track Jacket</h3>
+        <p>$67.00</p>
+        <select id="MizunoTrackJacketSize">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+        <br>
+        <button class="add" onclick='addToCart({
+          name: "Mizuno Track Jacket",
+          price: 67.00,
+          quantity: 1,
+          size: document.getElementById("MizunoTrackJacketSize").value
+        })'>Add to Cart</button>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+
+      <!-- Jacket 3 -->
+      <div class="product">
+        <img src="img/jacket3.jpg" alt="">
+        <h3>Woven Windbreaker</h3>
+        <p>$260.00</p>
+        <select id="WovenWindbreakerSize">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+        <br>
+        <button class="add" onclick='addToCart({
+          name: "Woven Windbreaker",
+          price: 260.00,
+          quantity: 1,
+          size: document.getElementById("WovenWindbreakerSize").value
+        })'>Add to Cart</button>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+
+      <!-- Jacket 4 -->
+      <div class="product">
+        <img src="img/jacket4.jpg" alt="">
+        <h3>Balenciaga WB Jacket</h3>
+        <p>$492.00</p>
+        <select id="BalenciagaWBJacketSize">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+        <br>
+        <button class="add" onclick='addToCart({
+          name: "Balenciaga WB Jacket",
+          price: 492.00,
+          quantity: 1,
+          size: document.getElementById("BalenciagaWBJacketSize").value
+        })'>Add to Cart</button>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+
+      <!-- Jacket 5 -->
+      <div class="product">
+        <img src="img/jacket5.jpg" alt="">
+        <h3>DXMT Windbreaker</h3>
+        <p>$96.00</p>
+        <select id="DXMTWindbreakerSize">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+        <br>
+        <button class="add" onclick='addToCart({
+          name: "DXMT Windbreaker",
+          price: 96.00,
+          quantity: 1,
+          size: document.getElementById("DXMTWindbreakerSize").value
+        })'>Add to Cart</button>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+
+      <!-- Jacket 6 -->
+      <div class="product">
+        <img src="pic/13.jpg" alt="">
+        <h3>Rockcake Manila</h3>
+        <p>$123.00</p>
+        <select id="RockcakeSize">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+        <br>
+        <button class="add" onclick='addToCart({
+          name: "Rockcake Manila",
+          price: 123.00,
+          quantity: 1,
+          size: document.getElementById("RockcakeSize").value
+        })'>Add to Cart</button>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+
+      <!-- Jacket 7 -->
+      <div class="product">
+        <img src="pic/16.jpg" alt="">
+        <h3>Crestline Black</h3>
+        <p>$158.00</p>
+        <select id="CrestlineSize">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+        <br>
+        <button class="add" onclick='addToCart({
+          name: "Crestline Black",
+          price: 158.00,
+          quantity: 1,
+          size: document.getElementById("CrestlineSize").value
+        })'>Add to Cart</button>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+
+      <!-- Jacket 8 -->
+      <div class="product">
+        <img src="pic/22.jpg" alt="">
+        <h3>Strikerline Adidas</h3>
+        <p>$323.00</p>
+        <select id="StrikeSize">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+        <br>
+        <button class="add" onclick='addToCart({
+          name: "Strikerline Adidas",
+          price: 323.00,
+          quantity: 1,
+          size: document.getElementById("StrikeSize").value
+        })'>Add to Cart</button>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- MEN COLLECTION -->
+<div id="menModal" class="modal">
+    <div class="modal-content1">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Men's Clothes</h2>
+       <div class="product-grid">
+
+        <div class="product">
+          <img src="pic/29.jpg" alt="">
+          <h3>Off The Grid</h3>
+          <p>$113.00</p>
+          <select id="OffSize">
+           <option value="Small">Small</option>
+           <option value="Medium">Medium</option>
+           <option value="Large">Large</option>
+          </select>
+           <br>
+          <button class="add" onclick='addToCart({
+              name: "Off The Grid",
+              price: 113.00,
+              quantity: 1, size: document.getElementById("OffSize").value})'>Add to Cart</button>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+
+        <div class="product">
+          <img src="pic/shopping3.jpg" alt="">
+          <h3>Bape Ape Head Polo</h3>
+          <p>$140.00</p>
+          <select id="BapeSize">
+           <option value="Small">Small</option>
+           <option value="Medium">Medium</option>
+           <option value="Large">Large</option>
+          </select>
+          <br>
+          <button class="add" onclick='addToCart({
+              name: "Bape Ape Head Polo",
+              price: 140.00,
+              quantity: 1,
+              size: document.getElementById("BapeSize").value})'>Add to Cart</button>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+
+        <div class="product">
+          <img src="pic/cap.jpg" alt="">
+          <h3>Retro 90s Cap</h3>
+          <p>$88.00</p>
+          <select id="RetroSize">
+           <option value="Small">Small</option>
+           <option value="Medium">Medium</option>
+           <option value="Large">Large</option>
+          </select>
+          <br>
+          <button class="add" onclick='addToCart({
+              name: "Retro 90s Cap",
+              price: 88.00,
+              quantity: 1,
+              size: document.getElementById("RetroSize").value})'>Add to Cart</button>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+
+        <div class="product">
+          <img src="pic/polo.jpg" alt="">
+          <h3>Atalia Polo</h3>
+          <p>$200.00</p>
+          <select id="ItaliaSize">
+           <option value="Small">Small</option>
+           <option value="Medium">Medium</option>
+           <option value="Large">Large</option>
+          </select>
+          <br>
+          <button class="add" onclick='addToCart({
+              name: "Atalia Polo",
+              price: 200.00,
+              quantity: 1,
+              size: document.getElementById("ItaliaSize").value})'>Add to Cart</button>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+
+        <div class="product">
+          <img src="pic/watch.jpg" alt="">
+          <h3>Frederique Constant Watch</h3>
+          <p>$436.00</p>
+          <select id="WatchSize">
+           <option value="Small">Small</option>
+           <option value="Medium">Medium</option>
+           <option value="Large">Large</option>
+          </select>
+          <br>
+          <button class="add" onclick='addToCart({
+              name: "Frederique Constant Watch",
+              price: 436.00,
+              quantity: 1,
+              size: document.getElementById("WatchSize").value})'>Add to Cart</button>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+
+        <div class="product">
+          <img src="pic/32.jpg" alt="">
+          <h3>Street Pulse</h3>
+          <p>$120.00</p>
+          <select id="StreetSize">
+           <option value="Small">Small</option>
+           <option value="Medium">Medium</option>
+           <option value="Large">Large</option>
+          </select>
+          <br>
+          <button class="add" onclick='addToCart({
+              name: "Street Pulse",
+              price: 120.00,
+              quantity: 1,
+              size: document.getElementById("StreetSize").value})'>Add to Cart</button>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+
+        <div class="product">
+          <img src="pic/31.jpg" alt="">
+          <h3>Beyond Boundaries DBTK</h3>
+          <p>$129.00</p>
+          <select id="BeyondSize">
+           <option value="Small">Small</option>
+           <option value="Medium">Medium</option>
+           <option value="Large">Large</option>
+          </select>
+          <br>
+          <button class="add" onclick='addToCart({
+              name: "Beyond Boundaries",
+              price: 129.00,
+              quantity: 1,
+              size: document.getElementById("BeyondSize").value})'>Add to Cart</button>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+
+        <div class="product">
+          <img src="pic/pants.jpg" alt="">
+          <h3>Wide Leg Corduroy</h3>
+          <p>$65.00</p>
+          <select id="WideLegSize">
+           <option value="Small">Small</option>
+           <option value="Medium">Medium</option>
+           <option value="Large">Large</option>
+          </select>
+          <br>
+          <button class="add" onclick='addToCart({
+              name: "Wide Leg Corduroy",
+              price: 65.00,
+              quantity: 1,
+              size: document.getElementById("BeyondSize").value})'>Add to Cart</button>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- WOMEN COLLECTION -->
+<div id="womenModal" class="modal">
+  <div class="modal-content1">
+    <span class="close" onclick="closeModal('womenModal')">&times;</span>
+      <h2>Women's Clothes</h2> 
+     <div class="product-grid">
+
+      <!-- Product 1 -->
+      <div class="product">
+        <img src="pic/shopping.jpg" alt="">
+        <h3>Peacock Green Top</h3>
+        <p>$55.00</p>
+        <select id="GreenTopSize">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+        <br>
+        <button class="add" onclick='addToCart({
+          name: "Peacock Green Top",
+          price: 55.00,
+          quantity: 1,
+          size: document.getElementById("GreenTopSize").value
+        })'>Add to Cart</button>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product">
+        <img src="pic/2.jpg" alt="">
+        <h3>Gridiron Glory Tee</h3>
+        <p>$62.00</p>
+        <select id="womenTopSize">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+        <br>
+        <button class="add" onclick='addToCart({
+          name: "- Gridiron Glory Tee",
+          price: 62.00,
+          quantity: 1,
+          size: document.getElementById("womenTopSize").value
+        })'>Add to Cart</button>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product">
+        <img src="pic/shopping1.jpg" alt="">
+        <h3>Striped Skirt Set</h3>
+        <p>$70.00</p>
+        <select id="StripedSkirtSetSize">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+        <br>
+        <button class="add" onclick='addToCart({
+          name: "Striped Skirt Set",
+          price: 70.00,
+          quantity: 1,
+          size: document.getElementById("StripedSkirtSetSize").value
+        })'>Add to Cart</button>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product">
+        <img src="pic/5.jpg" alt="">
+        <h3>Sideline Swagger Crop</h3>
+        <p>$40.00</p>
+        <select id="SidelineSize">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+        <br>
+        <button class="add" onclick='addToCart({
+          name: "Sideline Swagger Crop",
+          price: 40.00,
+          quantity: 1,
+          size: document.getElementById("SidelineSize").value
+        })'>Add to Cart</button>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product">
+        <img src="pic/12.jpg" alt="">
+        <h3>Cozy Core Knit</h3>
+        <p>$34.00</p>
+        <select id="CozySize">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+        <br>
+        <button class="add" onclick='addToCart({
+          name: "Cozy Core Knit",
+          price: 34.00,
+          quantity: 1,
+          size: document.getElementById("CozySize").value
+        })'>Add to Cart</button>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product">
+        <img src="pic/20.jpg" alt="">
+        <h3>Unbans Crop</h3>
+        <p>$42.00</p>
+        <select id="womenCropTopSize">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+        <br>
+        <button class="add" onclick='addToCart({
+          name: "Unbans Crop",
+          price: 42.00,
+          quantity: 1,
+          size: document.getElementById("womenCropTopSize").value
+        })'>Add to Cart</button>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product">
+        <img src="pic/18.jpg" alt="">
+        <h3>Bordeaux Crop</h3>
+        <p>$73.00</p>
+        <select id="BordeauxSize">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+        <br>
+        <button class="add" onclick='addToCart({
+          name: "Bordeaux Crop",
+          price: 73.00,
+          quantity: 1,
+          size: document.getElementById("BordeauxSize").value
+        })'>Add to Cart</button>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product">
+        <img src="pic/19.jpg" alt="">
+        <h3>rooted denim Crop</h3>
+        <p>$130.00</p>
+        <select id="RootedDenimSize">
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+        </select>
+        <br>
+        <button class="add" onclick='addToCart({
+          name: "rooted denim Crop",
+          price: 130.00,
+          quantity: 1,
+          size: document.getElementById("RootedDenimSize").value
+        })'>Add to Cart</button>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div id="modal-stripe-shirt" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="product-details">
+      <img src="img/gildi.jpg" alt="Stripe Cropped Shirt" class="product-image">
+      <p id="productName">Stripe Cropped Shirt</p>
+      <p id="productPrice">$9.45</p>
+    </div>
+    <label for="size">Choose Size:</label>
+    <select id="size">
+      <option>Small</option><option>Medium</option><option>Large</option><option>XL</option>
+    </select>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" value="1" min="1">
+    <div class="buttons">
+      <button class="addToCart" data-name="Stripe Cropped Shirt" data-price="9.45">Add to Cart</button>
+      <button id="checkout">Checkout</button>
+    </div>
+  </div>
+</div>
+
+<div id="modal-white-longsleeve" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="product-details">
+      <img src="img/ubas.jpg" alt="Upper White Cotton Longsleeve" class="product-image">
+      <p id="productName">Upper White Cotton Longsleeve</p>
+      <p id="productPrice">$63.90</p>
+    </div>
+    <label for="size">Choose Size:</label>
+    <select id="size">
+      <option>Small</option><option>Medium</option><option>Large</option><option>XL</option>
+    </select>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" value="1" min="1">
+    <div class="buttons">
+      <button class="addToCart" data-name="Upper White Cotton Longsleeve" data-price="63.90">Add to Cart</button>
+      <button id="checkout">Checkout</button>
+    </div>
+  </div>
+</div>
+
+<div id="modal-p-pants-black" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="product-details">
+      <img src="img/seven.jpg" alt="P-Pants Black" class="product-image">
+      <p id="productName">P-Pants Black</p>
+      <p id="productPrice">$12.75</p>
+    </div>
+    <label for="size">Choose Size:</label>
+    <select id="size">
+      <option>Small</option><option>Medium</option><option>Large</option><option>XL</option>
+    </select>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" value="1" min="1">
+    <div class="buttons">
+      <button class="addToCart" data-name="P-Pants Black" data-price="12.75">Add to Cart</button>
+      <button id="checkout">Checkout</button>
+    </div>
+  </div>
+</div>
+
+<div id="modal-black-white-longsleeve" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="product-details">
+      <img src="img/four.jpg" alt="Upper Black White Longsleeve" class="product-image">
+      <p id="productName">Upper Black White Longsleeve</p>
+      <p id="productPrice">$51.45</p>
+    </div>
+    <label for="size">Choose Size:</label>
+    <select id="size">
+      <option>Small</option><option>Medium</option><option>Large</option><option>XL</option>
+    </select>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" value="1" min="1">
+    <div class="buttons">
+      <button class="addToCart" data-name="Upper Black White Longsleeve" data-price="51.45">Add to Cart</button>
+      <button id="checkout">Checkout</button>
+    </div>
+  </div>
+</div>
+
+<div id="modal-basic-white-tshirt" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="product-details">
+      <img src="img/nine.jpg" alt="Basic Upper White T-Shirt" class="product-image">
+      <p id="productName">Basic Upper White T-Shirt</p>
+      <p id="productPrice">$38.90</p>
+    </div>
+    <label for="size">Choose Size:</label>
+    <select id="size">
+      <option>Small</option><option>Medium</option><option>Large</option><option>XL</option>
+    </select>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" value="1" min="1">
+    <div class="buttons">
+      <button class="addToCart" data-name="Basic Upper White T-Shirt" data-price="38.90">Add to Cart</button>
+      <button id="checkout">Checkout</button>
+    </div>
+  </div>
+</div>
+
+<div id="modal-summer-sed-tshirt" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="product-details">
+      <img src="img/ten.jpg" alt="Summer SED T-Shirt" class="product-image">
+      <p id="productName">Summer SED T-Shirt</p>
+      <p id="productPrice">$43.01</p>
+    </div>
+    <label for="size">Choose Size:</label>
+    <select id="size">
+      <option>Small</option><option>Medium</option><option>Large</option><option>XL</option>
+    </select>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" value="1" min="1">
+    <div class="buttons">
+      <button class="addToCart" data-name="Summer SED T-Shirt" data-price="43.01">Add to Cart</button>
+      <button id="checkout">Checkout</button>
+    </div>
+  </div>
+</div>
+
+<div id="modal-mac-bernt-sweatwear" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="product-details">
+      <img src="img/eleven.jpg" alt="Mac & Bernt Sweatwear" class="product-image">
+      <p id="productName">Mac & Bernt Sweatwear</p>
+      <p id="productPrice">$56.90</p>
+    </div>
+    <label for="size">Choose Size:</label>
+    <select id="size">
+      <option>Small</option><option>Medium</option><option>Large</option><option>XL</option>
+    </select>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" value="1" min="1">
+    <div class="buttons">
+      <button class="addToCart" data-name="Mac & Bernt Sweatwear" data-price="56.90">Add to Cart</button>
+      <button id="checkout">Checkout</button>
+    </div>
+  </div>
+</div>
+
+<div id="modal-loose-wide-pants" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="product-details">
+      <img src="img/jjj.jpg" alt="Loose Wide Leg Pants" class="product-image">
+      <p id="productName">Loose Wide Leg Pants</p>
+      <p id="productPrice">$18.76</p>
+    </div>
+    <label for="size">Choose Size:</label>
+    <select id="size">
+      <option>Small</option><option>Medium</option><option>Large</option><option>XL</option>
+    </select>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" value="1" min="1">
+    <div class="buttons">
+      <button id="addToCart" data-name="Loose Wide Leg Pants" data-price="18.76">Add to Cart</button>
+      <button id="checkout">Checkout</button>
+    </div>
+  </div>
+</div>
+        
+ <script src="script.js"></script>
+
+ </body>
+ </html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign In — JayGi Streetwear</title>
+  <link rel="stylesheet" href="signIn.css" />
+</head>
+<body>
+  <header class="page-header">
+    <div class="logo-wrap">
+      <img src="img/JayGi.png" alt="JayGi logo" />
+    </div>
+  </header>
+
+  <main class="signin-container">
+    <div class="signin-card">
+      <h1>Welcome back</h1>
+      <p class="muted">Sign in to continue to JayGi Streetwear</p>
+
+      <form id="signinForm" action="index.html" method="POST">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required autocomplete="email" />
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required autocomplete="current-password" minlength="6" />
+
+        <div class="row between">
+          <label class="checkbox">
+            <input type="checkbox" name="remember" value="1" />
+            <span>Remember me</span>
+          </label>
+          <a class="forgot" href="forgot.html">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn-primary">Sign In</button>
+
+        <div class="divider"><span>Or continue with</span></div>
+
+        <div class="socials">
+          <button type="button" class="btn-social">Continue with Google</button>
+          <button type="button" class="btn-social">Continue with Facebook</button>
+        </div>
+
+        <p class="signup">Don't have an account? <a href="create.html">Create one</a></p>
+      </form>
+    </div>
+  </main>
+
+  <script src="sign-in.js"></script>
+</body>
+</html>
